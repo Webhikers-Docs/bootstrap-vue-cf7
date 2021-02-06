@@ -1,6 +1,6 @@
 # bootstrap-vue-cf7
 
-This is a small component, which enables you to create and submit forms to WordPress' `Contact Form 7` Plugin via `Rest API`, using `Google Recpatcha`.
+This is a small component, which enables you to create and submit forms to WordPress' `Contact Form 7` Plugin via `Rest API`, using `Google Recaptcha`.
 
 ## Installation
 
