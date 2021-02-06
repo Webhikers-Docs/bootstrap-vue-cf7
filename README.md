@@ -74,6 +74,8 @@ npm i vue-recaptcha-v3 --save
 
 3. Add a `bootstrap-vue` form as a child component for `BootstrapVueCF7`.
 
+Form input names **MUST** exactly match with the form field names that you received in our instructions. Otherwise they won't be validated by the server.
+
 ```vue
 <template>
   <div>
