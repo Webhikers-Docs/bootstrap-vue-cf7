@@ -76,7 +76,6 @@ npm i vue-recaptcha-v3 --save
 <template>
   <div>
     <BootstrapVueCF7
-      v-slot="scope"
       form_id="118347"
       recaptcha_site_key="6LefDQgaAAAAAB0rnTRam0MXuYFURJB6jN8skYHt">
 
