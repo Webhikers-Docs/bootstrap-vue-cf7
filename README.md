@@ -31,7 +31,7 @@ npm install @nuxtjs/axios --save
 npm i vue-recaptcha-v3 --save
 ```
 
-5. Register the component where you want to show the form:
+5. Register `bootstrap-vue-cf7` where you want to show the form:
 
 ```vue
 <template>
