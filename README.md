@@ -2,6 +2,18 @@
 
 This is a small component, which enables you to create and submit forms to WordPress' `Contact Form 7` Plugin via `Rest API`, using `Google Recaptcha`.
 
+## Prerequisites
+
+For each project that requires a contact form, you will receive the following data as additional instruction to this repo:
+You will receive:
+
+- the `baseURL` of our REST API Host
+- the input `name`s for the form
+- the google recaptcha `site-key`
+- the 'form_id' of the `WordPress Contact 7 Form`
+
+This data is required to go along with the following tutorial
+
 ## Installation
 
 1. Install Nuxt Axios Module
