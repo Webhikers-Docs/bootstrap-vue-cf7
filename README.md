@@ -4,7 +4,7 @@ This is a small component, which enables you to create and submit forms to WordP
 
 ## Installation
 
-1. Clone the `bootstrap-vue-cf7` vue component (this repo) into your components directory.
+1. Clone the `bootstrap-vue-cf7` (this repo) vue component into your components directory.
 2. Install `Vue Recaptcha v3`
 
 ```bash
@@ -36,8 +36,8 @@ npm i vue-recaptcha-v3 --save
 
 ## Usage
 
-1. Feed the form component with the `Contact Form 7 ID` as `form_id`, which you will receive in our instructions.
-2. Feed the form component the `Google Recpatcha Site Key` as `recaptcha_site_key`, which you will receive in our instructions.
+1. Feed `BootstrapVueCF7` with the `Contact Form 7 ID` as `form_id`, which you will receive in our instructions.
+2. Feed `BootstrapVueCF7` the `Google Recpatcha Site Key` as `recaptcha_site_key`, which you will receive in our instructions.
 
 ```vue
 <template>
