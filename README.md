@@ -57,7 +57,7 @@ npm i vue-recaptcha-v3 --save
 ## Usage
 
 1. Feed `BootstrapVueCF7` with the `Contact Form 7 ID` as `form_id`, which you will receive in our instructions.
-2. Feed `BootstrapVueCF7` the `Google Recpatcha Site Key` as `recaptcha_site_key`, which you will receive in our instructions.
+2. Feed `BootstrapVueCF7` with the `Google Recpatcha Site Key` as `recaptcha_site_key`, which you will receive in our instructions.
 
 ```vue
 <template>
