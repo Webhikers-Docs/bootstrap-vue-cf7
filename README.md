@@ -121,7 +121,7 @@ npm i vue-recaptcha-v3 --save
 </script>
 ```
 
-When you submit the form, you will need to send the original `$event`, so we can prevent the native form from beeing submitted and the form itself. So what we're doing is: `@submit="scope.submit({event:$event, form:form})"`
+When you submit the form, you will need to send the original `$event`, so we can prevent the native form from beeing submitted and the `form` itself. So what we're doing is: `@submit="scope.submit({event:$event, form:form})"`
 
 This will automatically submit a post request to the correct REST API enpoint, assuming that you've installed axios and set the baseURL of our REST API host, which you received in the instructions.
 
