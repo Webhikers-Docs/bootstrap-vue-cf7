@@ -54,12 +54,6 @@ npm i vue-recaptcha-v3 --save
 
 3. Add a `bootstrap-vue` form as a child component for `BootstrapVueCF7`.
 
-When you submit the form, you will need to send the original `$event`, so we can prevent the native form from beeing submitted and the form itself. So what we're doing is: `@submit="scope.submit({event:$event, form:form})"`
-
-Also, you will have access to `scope.spinner`, which returns `true`, when the form submission is processing and `false`, when the form is not processing. You can use it to show optional spinners to let the user know, when the form is submitting.
-
-Currently, we are not handling submission errors, but this will be added soon. Until then, please manually check if your code is working.
-
 ```vue
 <template>
   <div>
@@ -106,3 +100,9 @@ Currently, we are not handling submission errors, but this will be added soon. U
   }
 </script>
 ```
+
+When you submit the form, you will need to send the original `$event`, so we can prevent the native form from beeing submitted and the form itself. So what we're doing is: `@submit="scope.submit({event:$event, form:form})"`
+
+Also, you will have access to `scope.spinner`, which returns `true`, when the form submission is processing and `false`, when the form is not processing. You can use it to show optional spinners to let the user know, when the form is submitting.
+
+Currently, we are not handling submission errors, but this will be added soon. Until then, please manually check if your code is working.
