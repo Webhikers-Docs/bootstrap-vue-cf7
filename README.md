@@ -22,7 +22,7 @@ npm i vue-recaptcha-v3 --save
 
 <script lang="js">
 
-  import ContactForm from 'path/to/bootstrap-vue-cf7.vue'
+  import ContactForm from '@/components/bootstrap-vue-cf7.vue'
 
   export default{
 
