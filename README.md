@@ -4,14 +4,34 @@ This is a small component, which enables you to create and submit forms to WordP
 
 ## Installation
 
-1. Clone the `bootstrap-vue-cf7` (this repo) vue component into your components directory.
-2. Install `Vue Recaptcha v3`
+1. Install Nuxt Axios Module
+
+```bash
+npm install @nuxtjs/axios --save
+```
+
+2. Add it to `nuxt.config.js` and configure the baseURL, which you will receive in our instructions.
+
+```javascript
+
+  modules: [
+    '@nuxtjs/axios'
+  ],
+
+  axios: {
+    baseURL: 'http://localhost:4000', // Used as fallback if no runtime config is provided
+  },
+  
+```
+
+3. Clone the `bootstrap-vue-cf7` (this repo) vue component into your components directory.
+4. Install `Vue Recaptcha v3`
 
 ```bash
 npm i vue-recaptcha-v3 --save
 ```
 
-3. Register the component where you want to show the form:
+5. Register the component where you want to show the form:
 
 ```vue
 <template>
@@ -102,6 +122,8 @@ npm i vue-recaptcha-v3 --save
 ```
 
 When you submit the form, you will need to send the original `$event`, so we can prevent the native form from beeing submitted and the form itself. So what we're doing is: `@submit="scope.submit({event:$event, form:form})"`
+
+This will automatically submit a post request to the correct REST API enpoint, assuming that you've installed axios and set the baseURL of our REST API host, which you received in the instructions.
 
 Also, you will have access to `scope.spinner`, which returns `true`, when the form submission is processing and `false`, when the form is not processing. You can use it to show optional spinners to let the user know, when the form is submitting.
 
