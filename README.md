@@ -72,9 +72,6 @@ Currently, we are not handling submission errors, but this will be added soon. U
           <b-form-input
             v-model="form.name"
             type="text"
-            placeholder="Name"
-            class="form__field"
-            required
           ></b-form-input>
 
 
