@@ -16,18 +16,18 @@ npm i vue-recaptcha-v3 --save
 ```vue
 <template>
   <div>
-    <ContactForm></ContactForm>
+    <BootstrapVueCF7></BootstrapVueCF7>
   </div>
 </template>
 
 <script lang="js">
 
-  import ContactForm from '@/components/bootstrap-vue-cf7.vue'
+  import BootstrapVueCF7 from '@/components/bootstrap-vue-cf7.vue'
 
   export default{
 
     components:{
-      ContactForm,
+      BootstrapVueCF7,
     },
     
   }
@@ -42,17 +42,17 @@ npm i vue-recaptcha-v3 --save
 ```vue
 <template>
   <div>
-    <ContactForm
+    <BootstrapVueCF7
       v-slot="scope"
       form_id="118347"
       recaptcha_site_key="6LefDQgaAAAAAB0rnTRam0MXuYFURJB6jN8skYHt">
 
-    </ContactForm>
+    </BootstrapVueCF7>
   </div>
 </template>
 ```
 
-3. Add a `bootstrap-vue` form as a child component for `ContactForm`.
+3. Add a `bootstrap-vue` form as a child component for `BootstrapVueCF7`.
 
 When you submit the form, you will need to send the original `$event`, so we can prevent the native form from beeing submitted and the form itself. So what we're doing is: `@submit="scope.submit({event:$event, form:form})"`
 
@@ -63,7 +63,7 @@ Currently, we are not handling submission errors, but this will be added soon. U
 ```vue
 <template>
   <div>
-    <ContactForm
+    <BootstrapVueCF7
       v-slot="scope"
       form_id="118347"
       recaptcha_site_key="6LefDQgaAAAAAB0rnTRam0MXuYFURJB6jN8skYHt">
@@ -81,13 +81,13 @@ Currently, we are not handling submission errors, but this will be added soon. U
           </b-button>
         </b-form>
 
-    </ContactForm>
+    </BootstrapVueCF7>
   </div>
 </template>
 
 <script lang="js">
 
-  import ContactForm from 'path/to/form.vue'
+  import BootstrapVueCF7 from '@/components/bootstrap-vue-cf7.vue'
 
   export default{
   
@@ -100,7 +100,7 @@ Currently, we are not handling submission errors, but this will be added soon. U
     },
 
     components:{
-      ContactForm,
+      BootstrapVueCF7,
     },
     
   }
