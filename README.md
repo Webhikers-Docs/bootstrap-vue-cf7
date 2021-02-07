@@ -4,7 +4,7 @@ This is a small component, which enables you to create and submit forms to WordP
 
 ## Prerequisites
 
-For each project that requires a contact form, you will receive the following data in addition to this repo:
+For each project that requires a contact form, you will receive the following project-related data in addition to this repo:
 You will receive:
 
 - the `baseURL` of our REST API Host
