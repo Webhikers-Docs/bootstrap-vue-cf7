@@ -4,15 +4,13 @@ This is a small component, which enables you to create and submit forms to WordP
 
 ## Prerequisites
 
-For each project that requires a contact form, you will receive the following data as additional instruction to this repo:
+For each project that requires a contact form, you will receive the following data in addition to this repo:
 You will receive:
 
 - the `baseURL` of our REST API Host
 - the input `name`s for the form
 - the google recaptcha `site-key`
 - the 'form_id' of the `WordPress Contact 7 Form`
-
-This data is required to go along with the following tutorial
 
 ## Installation
 
