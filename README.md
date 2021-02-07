@@ -135,7 +135,7 @@ Form input names **MUST** exactly match with the form field names that you recei
 </script>
 ```
 
-When you submit the form, you will need to send the original `$event`, so we can prevent the native form from beeing submitted and the `form` itself. So what we're doing is: `@submit="scope.submit({event:$event, form:form})"`
+When we submit the form, we need to send the `form` itself and the original `$event`, so we can prevent the native form from beeing submitted. So what we're doing is: `@submit="scope.submit({event:$event, form:form})"`
 
 This will automatically submit a post request to the correct REST API enpoint, assuming that you've installed axios and set the baseURL of our REST API host, which you received in the instructions.
 
