@@ -42,10 +42,9 @@ npm i vue-recaptcha-v3 --save
 
 4. Clone the `bootstrap-vue-cf7` component (this repo) into your components directory.
 
-`@/pages/contact.vue`
-
 5. Register `bootstrap-vue-cf7` where you want to show the form:
 
+In `@/pages/contact.vue` (for example)
 ```vue
 <template>
   <div>
