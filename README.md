@@ -20,7 +20,7 @@ You will receive:
 npm install @nuxtjs/axios --save
 ```
 
-2. Add it to `nuxt.config.js` and configure the baseURL, which you will receive in our instructions.
+2. Add it to `nuxt.config.js` and configure the baseURL, which you will receive in our project-related data.
 
 ```javascript
 
@@ -68,8 +68,8 @@ In `@/pages/contact.vue` (for example)
 
 ## Usage
 
-1. Feed `BootstrapVueCF7` with the `Contact Form 7 ID` as `form_id`, which you will receive in our instructions.
-2. Feed `BootstrapVueCF7` with the `Google Recpatcha Site Key` as `recaptcha_site_key`, which you will receive in our instructions.
+1. Feed `BootstrapVueCF7` with the `Contact Form 7 ID` as `form_id`, which you will receive in our project-related data.
+2. Feed `BootstrapVueCF7` with the `Google Recpatcha Site Key` as `recaptcha_site_key`, which you will receive in our project-related data.
 
 ```vue
 <template>
@@ -85,7 +85,7 @@ In `@/pages/contact.vue` (for example)
 
 3. Add a `bootstrap-vue` form or a custom form as a child component for `BootstrapVueCF7`.
 
-Form input names **MUST** exactly match with the form field names that you received in our instructions. Otherwise they won't be validated by the server.
+Form input names **MUST** exactly match with the form field names that you received in our project-related data. Otherwise they won't be validated by the server.
 
 ```vue
 <template>
@@ -136,7 +136,7 @@ Form input names **MUST** exactly match with the form field names that you recei
 
 When we submit the form, we need to send the `form` itself and the original `$event`, so we can prevent the native form from beeing submitted. So what we're doing is: `@submit="scope.submit({event:$event, form:form})"`
 
-This will automatically submit a post request to the correct REST API enpoint, assuming that you've installed axios and set the baseURL of our REST API host, which you received in the instructions.
+This will automatically submit a post request to the correct REST API enpoint, assuming that you've installed axios and set the baseURL of our REST API host, which you received in the project-related data.
 
 Also, you will have access to `scope.spinner`, which returns `true`, when the form submission is processing and `false`, when the form is not processing. You can use it to show optional spinners to let the user know, when the form is submitting.
 
