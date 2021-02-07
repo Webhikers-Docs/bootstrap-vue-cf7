@@ -83,7 +83,7 @@ In `@/pages/contact.vue` (for example)
 </template>
 ```
 
-3. Add a `bootstrap-vue` form as a child component for `BootstrapVueCF7`.
+3. Add a `bootstrap-vue` form or a custom form as a child component for `BootstrapVueCF7`.
 
 Form input names **MUST** exactly match with the form field names that you received in our instructions. Otherwise they won't be validated by the server.
 
