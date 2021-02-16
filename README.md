@@ -91,6 +91,7 @@ Form input names **MUST** exactly match with the form field names that you recei
 <template>
   <div>
     <BootstrapVueCF7
+      v-on:submit="submit"
       v-slot="scope"
       form_id="118347"
       recaptcha_site_key="6LefDQgaAAAAAB0rnTRam0MXuYFURJB6jN8skYHt">
@@ -123,6 +124,12 @@ Form input names **MUST** exactly match with the form field names that you recei
         form:{
            name:'',
         }
+      }
+    },
+    
+    methods:{
+      submit:function(response){
+        console.log(response)
       }
     },
 
