@@ -51,6 +51,9 @@
 
         //send form submission
         var response = await this.$axios(options);
+        
+        //send event to parent component
+        this.$emit('submit', response)
 
         //stop spinner
         this.spinner = false
