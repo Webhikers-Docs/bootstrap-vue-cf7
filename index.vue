@@ -57,13 +57,6 @@
 
         //stop spinner
         this.spinner = false
-
-        //Show success - no error handling yet
-        this.$bvToast.toast('Ihre Kontaktanfrage wurde erfolgreich verschickt', {
-          title: 'Erfolg',
-          variant: 'success',
-          solid: true
-        })
       },
     }
   }
