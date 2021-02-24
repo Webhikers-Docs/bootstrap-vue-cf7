@@ -37,7 +37,7 @@ npm install @nuxtjs/axios --save
 3. Install `Vue Recaptcha v3`
 
 ```bash
-npm i vue-recaptcha-v3 --save
+npm install vue-recaptcha-v3@^1.9.0 --save
 ```
 
 4. Clone the `bootstrap-vue-cf7` component (this repo) into your components directory.
